@@ -1,0 +1,14 @@
+{
+  "title": "Website, Content Management System and Event Management System",
+  "date": "2020",
+  "client": "Institut d'Études du Couple et de la Famille",
+  "gallery": [
+    {
+      "type": "image",
+      "url": "tba"
+    }
+  ],
+  "description": "lorem ipsum IECF",
+  "technologies": ["Laravel", "jQuery", "Bootstrap CSS"],
+  "links": ["www.iecf.ch"]
+}

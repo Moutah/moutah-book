@@ -1,0 +1,14 @@
+{
+  "title": "Website",
+  "date": "2018",
+  "client": "Promethee",
+  "gallery": [
+    {
+      "type": "image",
+      "url": "tba"
+    }
+  ],
+  "description": "lorem ipsum Promethee",
+  "technologies": ["Laravel", "jQuery"],
+  "links": ["www.prometheemusic.com"]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Webstore",
+  "date": "2016",
+  "client": "Movement",
+  "gallery": [
+    {
+      "type": "image",
+      "url": "tba"
+    }
+  ],
+  "description": "lorem ipsum Movement",
+  "technologies": ["Laravel", "jQuery", "Bootstrap CSS"],
+  "links": ["outlet.movementskis.ch", "onlineshop.movementskis.ch"]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "MSC Queries",
+  "date": "2019",
+  "client": "Mediterranean Shipping Company",
+  "gallery": [
+    {
+      "type": "image",
+      "url": "tba"
+    }
+  ],
+  "description": "lorem ipsum MSC",
+  "technologies": ["Angular", "Bootstrap CSS", "Gulp", "Azure DevOps"],
+  "links": []
+}

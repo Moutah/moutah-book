@@ -1,0 +1,20 @@
+{
+  "title": "3D City",
+  "date": "2017",
+  "client": "Geneva University",
+  "gallery": [
+    {
+      "type": "video",
+      "url": "tba"
+    }
+  ],
+  "description": "lorem ipsum 3DCity",
+  "technologies": [
+    "Unity 3D",
+    "Angular",
+    "ThreeJS",
+    "ASP.NET Core",
+    "Mixed Reality Toolkit"
+  ],
+  "links": ["www.twogentlemen.net"]
+}
