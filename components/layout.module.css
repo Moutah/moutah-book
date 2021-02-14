@@ -1,0 +1,26 @@
+.navigation {
+    display: flex;
+}
+
+.navigation ul {
+    display: flex;
+    background-color: #ff0;
+    padding: 0;
+    margin: 0 0 0 auto;
+}
+
+.navigation ul li {
+    display: flex;
+    flex: 1;
+    list-style-type: none;
+}
+
+.navigation ul li a {
+    padding: 1rem 1.6rem
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    opacity: 0.4;
+}
