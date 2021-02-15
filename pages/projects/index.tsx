@@ -1,16 +1,24 @@
 import Head from "next/head";
+import Link from "next/link";
 import Layout from "../../components/layout";
 import { GetStaticProps } from "next";
 import { Project } from "../../models/project";
 import styles from "../../styles/Projects.module.css";
-import utilStyles from "../../styles/utils.module.css";
+import spinBorders from "../../styles/spin-borders.module.css";
+import cardStyles from "../../styles/card.module.css";
 import { APP_URL } from "../../config";
+import { useEffect, useState } from "react";
 
 export type ProjectsProps = {
   projects: Project[];
 };
 
 export default function Projects({ projects }: ProjectsProps) {
+  const [sortedProjects, setSortedProjects] = useState([]);
+  useEffect(() => {
+    setSortedProjects(projects.sort((a, b) => (a.date > b.date ? -1 : 1)));
+  });
+
   return (
     <Layout>
       <Head>
@@ -22,21 +30,40 @@ export default function Projects({ projects }: ProjectsProps) {
       </header>
 
       <section className={styles.projects}>
-        <p className={styles.projectsDisclaimer}>Disclaimer</p>
-
         <div className={styles.projectsList}>
-          {projects.map((project, i) => {
+          {sortedProjects.map((project, i) => {
             return (
               <div
-                className={styles.projectCard + " " + utilStyles.spinBorder}
+                className={[styles.projectCard, spinBorders.spinBorder].join(
+                  " "
+                )}
                 key={i}
               >
                 <div
                   className={
-                    utilStyles.spinBorderInner + " " + styles.projectCardInner
+                    spinBorders.spinBorderInner + " " + styles.projectCardInner
                   }
                 >
-                  {project.title}
+                  <Link href={`/projects/${project.id}`}>
+                    <a>
+                      <article className={cardStyles.card}>
+                        <img
+                          src={project.coverImgUrl}
+                          alt={project.title}
+                          className={cardStyles.cardMedia}
+                        />
+                        <div className={cardStyles.cardContent}>
+                          <h2 className={styles.projectTitle}>
+                            {project.title}
+                          </h2>
+
+                          <p className={styles.projectAbstract}>
+                            {project.abstract}
+                          </p>
+                        </div>
+                      </article>
+                    </a>
+                  </Link>
                 </div>
               </div>
             );

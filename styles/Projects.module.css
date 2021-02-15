@@ -19,11 +19,25 @@
 }
 
 .projectCard {
-    flex: 0 0 calc(50% - 1rem);
-    margin: 0.5rem;
-    border: 1px solid #eaeaea;
+    flex: 0 0 calc(50% - 0.4rem);
+    transform: scale(0.95);
+    transition: transform var(--transition-speed) ease-in-out;
+    margin: 0.2rem;
+}
+
+.projectCard:hover {
+    transform: scale(1);
 }
 
 .projectCardInner {
-    padding: 0.5rem;
+    padding: 0.8rem;
+}
+
+.projectTitle {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.projectAbstract {
+    font-size: 0.8rem;
 }

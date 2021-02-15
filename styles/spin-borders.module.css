@@ -15,7 +15,7 @@
     content: "";
     position: absolute;
     z-index: 10;
-    background-color: var(--color-borders);
+    background-color: var(--color-spin-border);
     transition: transform var(--transition-speed) ease-in-out;
 }
 
@@ -41,9 +41,12 @@
     transform: translate3d(100%, 0, 0);
 }
 
-.spinBorder:hover::before,
+.spinBorder:hover::before {
+    transform: translate3d(-80%, 0, 0);
+}
+
 .spinBorder:hover::after {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(80%, 0, 0);
 }
 
 /* Vertical bars */
@@ -68,7 +71,10 @@
     transform: translate3d(0, 100%, 0);
 }
 
-.spinBorderInner:hover::before,
-.spinBorderInner:hover::after {
-    transform: translate3d(0, 0, 0);
+.spinBorder:hover .spinBorderInner::before {
+    transform: translate3d(0, -80%, 0);
+}
+
+.spinBorder:hover .spinBorderInner::after {
+    transform: translate3d(0, 80%, 0);
 }
