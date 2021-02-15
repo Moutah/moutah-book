@@ -59,3 +59,28 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.contact {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.contactLinks {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.contactLinks a {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    opacity: 0.9;
+    transform: scale(0.95);
+    transition: transform 0.11s ease-in-out, opacity 0.11s ease-in-out;
+}
+
+.contactLinks a:hover {
+    opacity: 1;
+    transform: scale(1);
+}

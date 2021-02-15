@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Link from "next/link";
+import BIcon from "../components/b-icon";
 import Layout from "../components/layout";
 import Technology from "../components/technology";
 import styles from "../styles/Home.module.css";
@@ -115,9 +115,30 @@ export default function Home() {
         })}
       </section>
 
+      <hr className={styles.contentSplit} />
+
       <ReactScroll.Element name="contact">
         <section id="contact" className={styles.contact}>
-          Contact
+          <p>Get in touch</p>
+          <div className={styles.contactLinks}>
+            {/* Email */}
+            <a href="mailto:mathieu.tappolet@gmail.com">
+              <BIcon code="envelope" />
+            </a>
+
+            {/* LinkedIn */}
+            <a
+              href="https://www.linkedin.com/in/mathieutappolet/"
+              target="_blank"
+            >
+              <BIcon code="linkedin" />
+            </a>
+
+            {/* GitHub */}
+            <a href="https://github.com/Moutah" target="_blank">
+              <BIcon code="github" />
+            </a>
+          </div>
         </section>
       </ReactScroll.Element>
     </Layout>
