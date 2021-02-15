@@ -1,10 +1,34 @@
 .navigation {
+    margin: 0 6rem;
     display: flex;
+    position: fixed;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-bkg);
+    transition: padding 0.22s ease-in-out;
+    z-index: 1000;
+}
+
+.navigationPageTop {
+    padding: 1.2rem 0;
+}
+
+.navigationPageTop img {
+    opacity: 0 !important;
+}
+
+.navigation img {
+    height: 1.6rem;
+    margin: 0.7rem 0;
+    opacity: 0.8;
+
+    transition: opacity 0.22s ease-in-out;
 }
 
 .navigation ul {
     display: flex;
-    background-color: #ff0;
     padding: 0;
     margin: 0 0 0 auto;
 }
@@ -16,11 +40,14 @@
 }
 
 .navigation ul li a {
-    padding: 1rem 1.6rem
+    padding: 1rem 1.6rem;
+    font-size: 1rem;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     opacity: 0.4;
+    margin: 2rem 0;
+    font-size: 0.85rem;
 }

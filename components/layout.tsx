@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import styles from "./layout.module.css";
 
 export type LayoutProps = {
@@ -7,6 +8,14 @@ export type LayoutProps = {
 };
 
 export default function Layout({ children }: LayoutProps) {
+  const [isPageTop, setIsPageTop] = useState(true);
+
+  const handleScroll = () => setIsPageTop(window.scrollY === 0);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
+
   return (
     <>
       <Head>
@@ -94,7 +103,13 @@ export default function Layout({ children }: LayoutProps) {
         />
       </Head>
 
-      <nav className={styles.navigation}>
+      <nav
+        className={
+          styles.navigation + (isPageTop ? " " + styles.navigationPageTop : "")
+        }
+      >
+        <img src="/logo.png" alt="Mathieu Tappolet" />
+
         <ul>
           <li>
             <Link href="/#about">
