@@ -115,12 +115,6 @@ export default function Home() {
         })}
       </section>
 
-      <section className={styles.creations}>
-        <Link href="/projects">
-          <a>Projects</a>
-        </Link>
-      </section>
-
       <ReactScroll.Element name="contact">
         <section id="contact" className={styles.contact}>
           Contact
