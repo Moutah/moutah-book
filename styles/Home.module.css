@@ -1,14 +1,61 @@
-.header {}
-
-.title {
-    font-weight: 300;
-    margin: 0;
-    line-height: 1.15;
-    font-size: 4rem;
+.header {
+    height: 100vh;
+    padding: 50vh 6rem 0;
 }
 
-.subTitle {}
+.title {
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4.2rem;
+}
 
-.location {}
+.subTitle {
+    font-weight: 300;
+    font-size: 2.6rem;
+}
 
-.main {}
+.location {
+    font-weight: 300;
+    margin-top: 3.6rem;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.flagCh {
+    display: inline-flex;
+    width: .8em;
+    height: .8em;
+}
+
+.description {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.contentSplit {
+    max-width: calc(1000px - 6rem);
+    border-width: 1px 0 0;
+    opacity: 0.6;
+}
+
+.technologies {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.technologies p {
+    margin-bottom: 1.5rem;
+}
+
+.technologies h3 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin: 2.2rem auto 0.6rem;
+}
+
+.technologiesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
