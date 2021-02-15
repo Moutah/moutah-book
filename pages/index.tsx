@@ -17,6 +17,7 @@ export default function Home() {
         "Next Js",
         "Laravel",
         "WordPress",
+        "ASP.NET Core",
       ],
     },
     {
