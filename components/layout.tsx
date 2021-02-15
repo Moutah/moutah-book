@@ -96,7 +96,7 @@ export default function Layout({ children, home }: LayoutProps) {
         <meta name="theme-color" content="#ffffff" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap"
           rel="stylesheet"
         />
         <meta
