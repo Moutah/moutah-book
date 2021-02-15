@@ -19,10 +19,16 @@
     opacity: 0 !important;
 }
 
+:not(.navigationHome).navigationPageTop img {
+    opacity: 1 !important;
+
+}
+
 .navigation img {
     height: 1.6rem;
     margin: 0.7rem 0;
     opacity: 0.8;
+    cursor: pointer;
 
     transition: opacity 0.22s ease-in-out;
 }

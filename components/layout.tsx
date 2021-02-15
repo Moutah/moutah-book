@@ -107,12 +107,14 @@ export default function Layout({ children, home }: LayoutProps) {
 
       <nav
         className={
-          styles.navigation + (isPageTop ? " " + styles.navigationPageTop : "")
+          styles.navigation +
+          (isPageTop ? " " + styles.navigationPageTop : "") +
+          (home ? " " + styles.navigationHome : "")
         }
       >
-        <img src="/logo.png" alt="Mathieu Tappolet" />
-
-        {/* <li><ReactScroll.Link activeClass="active" className="test1" to="test1"  >Test 1</ReactScroll.Link></li> */}
+        <Link href="/">
+          <img src="/logo.png" alt="Mathieu Tappolet" />
+        </Link>
 
         <ul>
           <li>
