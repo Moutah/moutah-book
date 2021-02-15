@@ -6,11 +6,27 @@
   "gallery": [
     {
       "type": "image",
-      "url": "tba"
+      "url": "/projects/movement/grid.jpg"
+    },
+    {
+      "type": "image",
+      "url": "/projects/movement/skis.jpg"
+    },
+    {
+      "type": "image",
+      "url": "/projects/movement/order.jpg"
+    },
+    {
+      "type": "image",
+      "url": "/projects/movement/shopfinder.jpg"
     }
   ],
   "abstract": "Online store and outlet for Swiss ski company : Movement.",
-  "description": "Online store and outlet for Swiss ski company : Movement",
-  "technologies": ["Laravel", "jQuery", "Bootstrap CSS"],
-  "links": ["outlet.movementskis.ch", "onlineshop.movementskis.ch"]
+  "description": "With some remaining products from previous seasons and rising demand from ski riders for collector skis, Movement was in need of an Outlet shop. With a unique technical setup, the store was built from scratch, hooking directly into their legacy stock management system. With delivery possible at home or in customers' nearest shops, the website also features a \"Shopfinder\" tool.",
+  "technologies": ["Laravel", "jQuery"],
+  "links": [
+    "https://outlet.movementskis.ch",
+    "https://onlineshop.movementskis.ch"
+  ],
+  "source": ""
 }

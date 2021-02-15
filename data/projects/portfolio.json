@@ -3,14 +3,10 @@
   "date": "2021",
   "client": "Mathieu Tappolet",
   "coverImgUrl": "/projects/portfolio/cover.jpg",
-  "gallery": [
-    {
-      "type": "image",
-      "url": "tba"
-    }
-  ],
-  "description": "Portfolio website with a quick presentation of myself and some of my projects.",
+  "gallery": [],
   "abstract": "Portfolio website with a quick presentation of myself and some of my projects.",
-  "technologies": ["Laravel", "jQuery", "Bootstrap CSS"],
-  "links": ["www.iecf.ch"]
+  "description": "In order to present mysefl profesionnally and provide a glimpse of my skills and past creations, I built this portfolio website.",
+  "technologies": ["React", "Next Js"],
+  "links": ["/"],
+  "source": "https://github.com/Moutah/moutah-portfolio"
 }

@@ -6,17 +6,22 @@
   "gallery": [
     {
       "type": "video",
-      "url": "tba"
+      "url": "https://dms.licdn.com/playlist/C5605AQGpEdg19Vs7AQ/feedshare-captions-thumbnails-dualWrite-inhouse-mp4_h264_aac_3300k/0/1572184309814?e=1613509200&v=beta&t=MSZkoF_INxIuwbob-nu6HMKDKol2q7F6biLxCt1DuMg"
+    },
+    {
+      "type": "image",
+      "url": "/projects/3d-city/photo.jpg"
+    },
+    {
+      "type": "image",
+      "url": "/projects/3d-city/viewer.jpg"
     }
   ],
   "abstract": "Augmented Reality solution for GeoData.",
-  "description": "lorem ipsum 3DCity",
-  "technologies": [
-    "Unity 3D",
-    "Angular",
-    "ThreeJS",
-    "ASP.NET Core",
-    "Mixed Reality Toolkit"
+  "description": ". In partnership with CERN and Geneva Industrial Services (SIG), this project’s goal was to reinvent the process of mapping and managing underground infrastructures using Augmented Reality. Traditional GPS surveys were reduced to a minimum and measurements replaced by 3D mapping. On this mapping, objects could be identified as well as lots of other metadata. The results could be exported to standard formats for integration with existing systems as well as being sent to a HoloLens device for on-site holographic visualization in Augmented Reality.",
+  "technologies": ["Unity 3D", "Angular", "Three Js", "ASP.NET Core"],
+  "links": [
+    "https://www.tdg.ch/geneve/actu-genevoise/lunettes-voir-bitume/story/30056323"
   ],
-  "links": []
+  "source": ""
 }

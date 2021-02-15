@@ -6,11 +6,20 @@
   "gallery": [
     {
       "type": "image",
-      "url": "tba"
+      "url": "/projects/iecf/homepage.jpg"
+    },
+    {
+      "type": "image",
+      "url": "/projects/iecf/inscriptions.jpg"
+    },
+    {
+      "type": "image",
+      "url": "/projects/iecf/admin.jpg"
     }
   ],
   "abstract": "Website, Content Management System and Event Management System.",
-  "description": "Website, Content Management System and Event Management System",
-  "technologies": ["Laravel", "jQuery", "Bootstrap CSS"],
-  "links": ["www.iecf.ch"]
+  "description": "The \"Institut d'Études du Couple et de la Famille\" provides continuous formation for psychologist working with families. They organise seminars and complete formations that participants can register to directly from their website. Their new platform allows them to manage both the dynamic content of their offer as well as registration status, event follow up and statistics and document generation.",
+  "technologies": ["Laravel", "jQuery"],
+  "links": ["https://www.iecf.ch"],
+  "source": ""
 }

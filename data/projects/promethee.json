@@ -6,11 +6,24 @@
   "gallery": [
     {
       "type": "image",
-      "url": "tba"
+      "url": "/projects/promethee/homepage.jpg"
+    },
+    {
+      "type": "image",
+      "url": "/projects/promethee/discography.jpg"
+    },
+    {
+      "type": "image",
+      "url": "/projects/promethee/biography.jpg"
+    },
+    {
+      "type": "image",
+      "url": "/projects/promethee/gallery.jpg"
     }
   ],
   "abstract": "One page website with public and promotional private pages.",
-  "description": "lorem ipsum Promethee",
+  "description": "Promethee is a geneva-based music band. Active since 2008 they released several albums and tour Europe extensively. The website is the cornerstone of their digital presence, linking to all their social media and regrouping official informations. In addition, the website provides promotional material for press and fans alike.",
   "technologies": ["Laravel", "jQuery"],
-  "links": ["www.prometheemusic.com"]
+  "links": ["https://www.prometheemusic.com"],
+  "source": ""
 }

@@ -6,11 +6,12 @@
   "gallery": [
     {
       "type": "image",
-      "url": "tba"
+      "url": "/projects/msc-queries/cover.jpg"
     }
   ],
   "abstract": "Intranet application for browsing company-wide operational data.",
-  "description": "lorem ipsum MSC",
-  "technologies": ["Angular", "Bootstrap CSS", "Gulp", "Azure DevOps"],
-  "links": []
+  "description": "MSC is one of the leader in international maritime transport. With presence all around the globe and more than 70’000 employees, the company operates hundreds of ships and millions of containers for transporting goods of all kind. I develop and maintain a web application on the company's intranet for displaying data across departments. Used by tens of thousands of users daily, this interface connects to several sources of data and present them in a simple and intuitive way so that any employee can understand them without requiring specialized competencies.",
+  "technologies": ["Angular"],
+  "links": [],
+  "source": ""
 }
