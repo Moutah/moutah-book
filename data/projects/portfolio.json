@@ -1,0 +1,16 @@
+{
+  "title": "This website",
+  "date": "2021",
+  "client": "Mathieu Tappolet",
+  "coverImgUrl": "https://via.placeholder.com/600",
+  "gallery": [
+    {
+      "type": "image",
+      "url": "tba"
+    }
+  ],
+  "description": "Portfolio website with a quick presentation of myself and some of my projects.",
+  "abstract": "Portfolio website with a quick presentation of myself and some of my projects.",
+  "technologies": ["Laravel", "jQuery", "Bootstrap CSS"],
+  "links": ["www.iecf.ch"]
+}

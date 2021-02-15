@@ -1,13 +1,15 @@
 {
-  "title": "Website and Entreprise Resource Planning tool",
-  "date": "2016",
+  "title": "Two Gentlemen ERP",
+  "date": "2017",
   "client": "Two Gentlemen",
+  "coverImgUrl": "https://via.placeholder.com/600",
   "gallery": [
     {
       "type": "image",
       "url": "tba"
     }
   ],
+  "abstract": "Company web-based ERP for managing day to day business activities.",
   "description": "lorem ipsum Two Gentlemen",
   "technologies": ["Laravel", "Vue"],
   "links": ["www.twogentlemen.net"]

@@ -22,8 +22,11 @@ export const database = {
 
     // get entry
     if (id) {
-      const data = fs.readFileSync(`${DATA_PATH}/${table}/${id}.json`, "utf-8");
-      return JSON.parse(data);
+      const json = fs.readFileSync(`${DATA_PATH}/${table}/${id}.json`, "utf-8");
+      return {
+        id,
+        ...JSON.parse(json),
+      };
     }
 
     // get entries recursively

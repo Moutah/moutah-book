@@ -2,12 +2,14 @@
   "title": "MSC Queries",
   "date": "2019",
   "client": "Mediterranean Shipping Company",
+  "coverImgUrl": "https://via.placeholder.com/600",
   "gallery": [
     {
       "type": "image",
       "url": "tba"
     }
   ],
+  "abstract": "Intranet application for browsing company-wide operational data.",
   "description": "lorem ipsum MSC",
   "technologies": ["Angular", "Bootstrap CSS", "Gulp", "Azure DevOps"],
   "links": []

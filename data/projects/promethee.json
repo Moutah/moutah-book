@@ -1,13 +1,15 @@
 {
-  "title": "Website",
+  "title": "Promethee Website",
   "date": "2018",
   "client": "Promethee",
+  "coverImgUrl": "https://via.placeholder.com/600",
   "gallery": [
     {
       "type": "image",
       "url": "tba"
     }
   ],
+  "abstract": "One page website with public and promotional private pages.",
   "description": "lorem ipsum Promethee",
   "technologies": ["Laravel", "jQuery"],
   "links": ["www.prometheemusic.com"]

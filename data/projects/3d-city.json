@@ -2,12 +2,14 @@
   "title": "3D City",
   "date": "2017",
   "client": "Geneva University",
+  "coverImgUrl": "https://via.placeholder.com/600",
   "gallery": [
     {
       "type": "video",
       "url": "tba"
     }
   ],
+  "abstract": "Augmented Reality solution for GeoData.",
   "description": "lorem ipsum 3DCity",
   "technologies": [
     "Unity 3D",
@@ -16,5 +18,5 @@
     "ASP.NET Core",
     "Mixed Reality Toolkit"
   ],
-  "links": ["www.twogentlemen.net"]
+  "links": []
 }

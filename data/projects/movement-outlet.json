@@ -1,14 +1,16 @@
 {
-  "title": "Webstore",
+  "title": "Movement Outlet",
   "date": "2016",
   "client": "Movement",
+  "coverImgUrl": "https://via.placeholder.com/600",
   "gallery": [
     {
       "type": "image",
       "url": "tba"
     }
   ],
-  "description": "lorem ipsum Movement",
+  "abstract": "Online store and outlet for Swiss ski company : Movement.",
+  "description": "Online store and outlet for Swiss ski company : Movement",
   "technologies": ["Laravel", "jQuery", "Bootstrap CSS"],
   "links": ["outlet.movementskis.ch", "onlineshop.movementskis.ch"]
 }

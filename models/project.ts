@@ -4,11 +4,17 @@ export type ProjectMedia = {
 };
 
 export type Project = {
+  id: string;
   title: string;
   date: string;
   client: string;
+
+  coverImgUrl: string;
   gallery: ProjectMedia[];
+
   description: string;
+  abstract: string;
+
   technologies: string[];
   links: string[];
 };
