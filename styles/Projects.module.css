@@ -25,6 +25,13 @@
     margin: 0.2rem;
 }
 
+@media screen and (max-width: 999px) {
+    .projectCard {
+        flex: 0 0 calc(100% - 0.4rem);
+    }
+}
+
+
 .projectCard:hover {
     transform: scale(1);
 }

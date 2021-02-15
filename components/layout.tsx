@@ -105,47 +105,49 @@ export default function Layout({ children, home }: LayoutProps) {
         />
       </Head>
 
-      <nav
+      <div
         className={
-          styles.navigation +
-          (isPageTop ? " " + styles.navigationPageTop : "") +
-          (home ? " " + styles.navigationHome : "")
+          styles.navbar +
+          (isPageTop ? " " + styles.navbarPageTop : "") +
+          (home ? " " + styles.navbarHome : "")
         }
       >
-        <Link href="/">
-          <img src="/logo.png" alt="Mathieu Tappolet" />
-        </Link>
+        <nav className={styles.navigation}>
+          <Link href="/">
+            <img src="/logo.png" alt="Mathieu Tappolet" />
+          </Link>
 
-        <ul>
-          <li>
-            {home ? (
-              <ReactScroll.Link to="about" smooth={true} duration={300}>
-                About
-              </ReactScroll.Link>
-            ) : (
-              <Link href="/#about">
-                <a>About</a>
+          <ul>
+            <li>
+              {home ? (
+                <ReactScroll.Link to="about" smooth={true} duration={300}>
+                  About
+                </ReactScroll.Link>
+              ) : (
+                <Link href="/#about">
+                  <a>About</a>
+                </Link>
+              )}
+            </li>
+            <li>
+              <Link href="/projects">
+                <a>Projects</a>
               </Link>
-            )}
-          </li>
-          <li>
-            <Link href="/projects">
-              <a>Projects</a>
-            </Link>
-          </li>
-          <li>
-            {home ? (
-              <ReactScroll.Link to="contact" smooth={true} duration={300}>
-                Contacts
-              </ReactScroll.Link>
-            ) : (
-              <Link href="/#contact">
-                <a>Contacts</a>
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
+            </li>
+            <li>
+              {home ? (
+                <ReactScroll.Link to="contact" smooth={true} duration={300}>
+                  Contacts
+                </ReactScroll.Link>
+              ) : (
+                <Link href="/#contact">
+                  <a>Contacts</a>
+                </Link>
+              )}
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       <main>{children}</main>
 
