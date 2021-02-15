@@ -3,6 +3,7 @@ import Link from "next/link";
 import Layout from "../components/layout";
 import Technology from "../components/technology";
 import styles from "../styles/Home.module.css";
+import * as ReactScroll from "react-scroll";
 
 export default function Home() {
   const technologies = [
@@ -60,7 +61,7 @@ export default function Home() {
   ];
 
   return (
-    <Layout>
+    <Layout home>
       <Head>
         <title>Mathieu Tappolet</title>
       </Head>
@@ -80,15 +81,17 @@ export default function Home() {
         </div>
       </header>
 
-      <section id="about" className={styles.description}>
-        <p>
-          Passioned by computer science, I like to build tools that ease
-          people’s lives. I know the ropes of the different pieces composing a
-          web application and how to best leverage them to achieve my goal. I
-          like using the latest technologies, state of the art practices and
-          innovative approaches to provide the best possible solutions.
-        </p>
-      </section>
+      <ReactScroll.Element name="about">
+        <section id="about" className={styles.description}>
+          <p>
+            Passioned by computer science, I like to build tools that ease
+            people’s lives. I know the ropes of the different pieces composing a
+            web application and how to best leverage them to achieve my goal. I
+            like using the latest technologies, state of the art practices and
+            innovative approaches to provide the best possible solutions.
+          </p>
+        </section>
+      </ReactScroll.Element>
 
       <hr className={styles.contentSplit} />
 
@@ -98,16 +101,16 @@ export default function Home() {
           leverage the following technologies:
         </p>
 
-        {technologies.map((technology) => {
+        {technologies.map((technology, i) => {
           return (
-            <>
+            <div key={i}>
               <h3>{technology.name}</h3>
               <div className={styles.technologiesList}>
                 {technology.list.map((tech, i) => (
                   <Technology name={tech} key={i} />
                 ))}
               </div>
-            </>
+            </div>
           );
         })}
       </section>
@@ -118,9 +121,11 @@ export default function Home() {
         </Link>
       </section>
 
-      <section id="contact" className={styles.contact}>
-        Contact
-      </section>
+      <ReactScroll.Element name="contact">
+        <section id="contact" className={styles.contact}>
+          Contact
+        </section>
+      </ReactScroll.Element>
     </Layout>
   );
 }

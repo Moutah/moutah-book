@@ -1,13 +1,15 @@
 import Head from "next/head";
+import * as ReactScroll from "react-scroll";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import styles from "./layout.module.css";
 
 export type LayoutProps = {
   children: React.ReactNode;
+  home?: boolean;
 };
 
-export default function Layout({ children }: LayoutProps) {
+export default function Layout({ children, home }: LayoutProps) {
   const [isPageTop, setIsPageTop] = useState(true);
 
   const handleScroll = () => setIsPageTop(window.scrollY === 0);
@@ -110,11 +112,19 @@ export default function Layout({ children }: LayoutProps) {
       >
         <img src="/logo.png" alt="Mathieu Tappolet" />
 
+        {/* <li><ReactScroll.Link activeClass="active" className="test1" to="test1"  >Test 1</ReactScroll.Link></li> */}
+
         <ul>
           <li>
-            <Link href="/#about">
-              <a>About</a>
-            </Link>
+            {home ? (
+              <ReactScroll.Link to="about" smooth={true} duration={300}>
+                About
+              </ReactScroll.Link>
+            ) : (
+              <Link href="/#about">
+                <a>About</a>
+              </Link>
+            )}
           </li>
           <li>
             <Link href="/projects">
@@ -122,9 +132,15 @@ export default function Layout({ children }: LayoutProps) {
             </Link>
           </li>
           <li>
-            <Link href="/#contact">
-              <a>Contacts</a>
-            </Link>
+            {home ? (
+              <ReactScroll.Link to="contact" smooth={true} duration={300}>
+                Contacts
+              </ReactScroll.Link>
+            ) : (
+              <Link href="/#contact">
+                <a>Contacts</a>
+              </Link>
+            )}
           </li>
         </ul>
       </nav>
