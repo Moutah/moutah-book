@@ -53,6 +53,7 @@ export default function Home() {
         "VS Code",
         "GitHub",
         "Azure DevOps",
+        "Sonarcloud",
         "Postman",
         "Unity 3D",
         "Photoshop",
