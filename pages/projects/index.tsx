@@ -6,8 +6,8 @@ import { Project } from "../../models/project";
 import styles from "../../styles/Projects.module.css";
 import spinBorders from "../../styles/spin-borders.module.css";
 import cardStyles from "../../styles/card.module.css";
-import { APP_URL } from "../../config";
 import { useEffect, useState } from "react";
+import { getAllProjects } from "../../services/api";
 
 export type ProjectsProps = {
   projects: Project[];
@@ -75,8 +75,7 @@ export default function Projects({ projects }: ProjectsProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const response = await fetch(`${APP_URL}/api/projects`);
-  const projects: Project[] = await response.json();
+  const projects = await getAllProjects();
 
   return {
     props: {
