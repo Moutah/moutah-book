@@ -2,7 +2,7 @@
   "title": "This website",
   "date": "2021",
   "client": "Mathieu Tappolet",
-  "coverImgUrl": "https://via.placeholder.com/600",
+  "coverImgUrl": "/projects/portfolio/cover.jpg",
   "gallery": [
     {
       "type": "image",
