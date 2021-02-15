@@ -1,1 +1,29 @@
-.projects {}
+.header {
+    padding: 8rem 0 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.projects {
+    text-align: center;
+}
+
+.projectsDisclaimer {
+    margin-bottom: 3rem;
+}
+
+.projectsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projectCard {
+    flex: 0 0 calc(50% - 1rem);
+    margin: 0.5rem;
+    border: 1px solid #eaeaea;
+}
+
+.projectCardInner {
+    padding: 0.5rem;
+}

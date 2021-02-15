@@ -1,6 +1,9 @@
 :root {
     --color-bkg: #fcfdfe;
     --color-text: #212223;
+    --color-borders: #414243;
+    --transition-speed: 0.2s;
+    --transition-speed-slow: 0.36s;
 }
 
 html,

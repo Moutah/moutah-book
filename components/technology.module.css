@@ -17,7 +17,7 @@
     height: 100%;
     filter: grayscale(1);
     transform: scale(0.95);
-    transition: transform 0.11s ease-in-out, grayscale 0.11s ease-in-out;
+    transition: all var(--transition-speed) ease-in-out;
 }
 
 .technology:hover img {

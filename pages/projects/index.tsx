@@ -3,6 +3,7 @@ import Layout from "../../components/layout";
 import { GetStaticProps } from "next";
 import { Project } from "../../models/project";
 import styles from "../../styles/Projects.module.css";
+import utilStyles from "../../styles/utils.module.css";
 import { APP_URL } from "../../config";
 
 export type ProjectsProps = {
@@ -16,18 +17,31 @@ export default function Projects({ projects }: ProjectsProps) {
         <title>Mathieu Tappolet - Projects</title>
       </Head>
 
-      <h1>All projects</h1>
-
-      <p>Disclaimer</p>
+      <header className={styles.header}>
+        <h1>Projects</h1>
+      </header>
 
       <section className={styles.projects}>
-        {projects.map((project, i) => {
-          return (
-            <div className="card" key={i}>
-              {project.title}
-            </div>
-          );
-        })}
+        <p className={styles.projectsDisclaimer}>Disclaimer</p>
+
+        <div className={styles.projectsList}>
+          {projects.map((project, i) => {
+            return (
+              <div
+                className={styles.projectCard + " " + utilStyles.spinBorder}
+                key={i}
+              >
+                <div
+                  className={
+                    utilStyles.spinBorderInner + " " + styles.projectCardInner
+                  }
+                >
+                  {project.title}
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </section>
     </Layout>
   );
