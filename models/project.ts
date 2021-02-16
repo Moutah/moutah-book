@@ -1,7 +1,4 @@
-export type ProjectMedia = {
-  type: "image" | "video";
-  url: string;
-};
+import { Media } from "./media";
 
 export type Project = {
   id: string;
@@ -10,7 +7,7 @@ export type Project = {
   client: string;
 
   coverImgUrl: string;
-  gallery: ProjectMedia[];
+  gallery: Media[];
 
   description: string;
   abstract: string;

@@ -1,0 +1,41 @@
+.header {
+    padding: 8rem 0 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header h2 {
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.header .projectDate {
+    font-size: 0.8rem;
+}
+
+.projectGallery {
+    padding-bottom: 3rem;
+}
+
+.project {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.projectLinks {
+    margin-top: 2.2rem;
+}
+
+.projectTechnologies {
+    margin-top: 6rem;
+}
+
+.technologiesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
