@@ -32,7 +32,7 @@ export default function ProjectPage({ project }: ProjectProps) {
         </div>
 
         <section className={styles.projectDescription}>
-          <p className={styles.projectDescription}>{project.description}</p>
+          <p>{project.description}</p>
 
           <p className={styles.projectLinks}>
             {project.links.map((link, i) => {
