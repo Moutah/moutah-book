@@ -18,7 +18,7 @@
 .location {
     font-weight: 300;
     margin-top: 3.6rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     opacity: 0.8;
 }
 
@@ -64,8 +64,12 @@
 }
 
 .description {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: center;
+}
+
+.description p {
+    margin-bottom: 1.6rem;
 }
 
 .contentSplit {
@@ -81,7 +85,6 @@
 }
 
 .technologies {
-    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -90,7 +93,7 @@
 }
 
 .technologies h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: normal;
     margin: 2.2rem auto 0.6rem;
 }
@@ -102,7 +105,7 @@
 }
 
 .contact {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: center;
 }
 
