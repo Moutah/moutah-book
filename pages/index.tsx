@@ -92,6 +92,26 @@ export default function Home() {
             like using the latest technologies, state of the art practices and
             innovative approaches to provide the best possible solutions.
           </p>
+          <p>
+            I started web developpment in 2006 with small websites, WordPress
+            plugins and themes as a hobby and student job. With every new
+            project, I would try and discover new things and eventually worked
+            on every layer of the usual{" "}
+            <a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)">
+              LAMP stack
+            </a>
+            . With the rise of Node JS and JavaScript frameworks, I started
+            making more and more complex and dynamic web applications, not just
+            websites anymore.
+          </p>
+          <p>
+            A lot has changed in the web since the time I learned CSS to
+            customize MySpace pages. But my interest to create modern, powerfull
+            and usefull web applications has never been higher. With a very
+            active and fast evolving ecosystem, the possibilities are increasing
+            every day and I'm always looking forward to learn new things to
+            build even better applications.
+          </p>
         </section>
       </ReactScroll.Element>
 
@@ -99,8 +119,8 @@ export default function Home() {
 
       <section className={styles.technologies}>
         <p>
-          Different promblems require different solutions. To answer my needs. I
-          leverage the following technologies:
+          Different promblems require different solutions. To answer my needs.
+          I've learned to leverage the following technologies:
         </p>
 
         {technologies.map((technology, i) => {
