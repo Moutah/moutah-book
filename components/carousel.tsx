@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useSwipeable } from "react-swipeable";
 import { Media } from "../models/media";
 import styles from "./carousel.module.css";
 
@@ -24,9 +25,24 @@ export default function Carousel({ medias, title }: CarouselProps) {
     }, 1000);
   };
 
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: () => {
+      // can't go more to the right
+      if (activeMediaI === medias.length - 1) return;
+
+      activateMedia(activeMediaI + 1);
+    },
+    onSwipedRight: () => {
+      // can't go more to the left
+      if (activeMediaI === 0) return;
+
+      activateMedia(activeMediaI - 1);
+    },
+  });
+
   return (
     <div className={styles.carousel}>
-      <div className={styles.carouselInner}>
+      <div className={styles.carouselInner} {...swipeHandlers}>
         {medias.map((media, i) => (
           <div
             className={
