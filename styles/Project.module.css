@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1099px) {
     .header {
         margin: 0 1rem;
     }
@@ -30,12 +30,6 @@
     text-align: center;
     max-width: 1000px;
     margin: 0 auto;
-}
-
-@media screen and (max-width: 999px) {
-    .projectDescription {
-        margin: 0 1rem;
-    }
 }
 
 .projectLinks {
