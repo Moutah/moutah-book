@@ -6,7 +6,7 @@
   "coverImgUrl": "/projects/portfolio/cover.jpg",
   "gallery": [],
   "abstract": "Portfolio website with a quick presentation of myself and some of my projects.",
-  "description": "In order to present mysefl profesionnally and provide a glimpse of my skills and past creations, I built this portfolio website.",
+  "description": "With many projects scattered throughout the years, I needed a place to group and present the most significant ones. I built this website to easily present mysefl profesionnally and complete a traditionnal CV document.",
   "technologies": ["React", "Next Js"],
   "links": ["www.moutah.ch"],
   "source": "https://github.com/Moutah/moutah-portfolio"
