@@ -7,6 +7,6 @@
   "abstract": "Portfolio website with a quick presentation of myself and some of my projects.",
   "description": "In order to present mysefl profesionnally and provide a glimpse of my skills and past creations, I built this portfolio website.",
   "technologies": ["React", "Next Js"],
-  "links": ["/"],
+  "links": ["www.moutah.ch"],
   "source": "https://github.com/Moutah/moutah-portfolio"
 }

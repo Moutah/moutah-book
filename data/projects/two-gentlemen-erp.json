@@ -28,6 +28,6 @@
   "abstract": "Company web-based ERP for managing day to day business activities.",
   "description": "Two Gentlemen is active in the music industry. It provides artistic management and booking services and is also a record label. With hundreds of artists in their roster and extensive data to manipulate, they need an Enterprise Resource Planning tool to handles things such as the artists schedules, relationships with event promoters and venues or administrative aspects of the contracts and invoicing. The platform also serves as a Content Management System for their website.",
   "technologies": ["Laravel", "Vue"],
-  "links": ["https://www.twogentlemen.net"],
+  "links": ["www.twogentlemen.net"],
   "source": ""
 }

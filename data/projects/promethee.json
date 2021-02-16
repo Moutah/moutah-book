@@ -24,6 +24,6 @@
   "abstract": "One page website with public and promotional private pages.",
   "description": "Promethee is a geneva-based music band. Active since 2008 they released several albums and tour Europe extensively. The website is the cornerstone of their digital presence, linking to all their social media and regrouping official informations. In addition, the website provides promotional material for press and fans alike.",
   "technologies": ["Laravel", "jQuery"],
-  "links": ["https://www.prometheemusic.com"],
+  "links": ["www.prometheemusic.com"],
   "source": ""
 }
