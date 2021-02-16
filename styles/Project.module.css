@@ -39,3 +39,11 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.projectSource {
+    margin-top: 3rem;
+}
+
+.projectSource a {
+    font-size: 2rem;
+}

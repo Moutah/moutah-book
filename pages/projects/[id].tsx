@@ -6,6 +6,7 @@ import Technology from "../../components/technology";
 import Layout from "../../components/layout";
 import styles from "../../styles/Project.module.css";
 import Carousel from "../../components/carousel";
+import BIcon from "../../components/b-icon";
 
 export type ProjectProps = {
   project: Project;
@@ -43,9 +44,7 @@ export default function ProjectPage({ project }: ProjectProps) {
           </p>
 
           <div className={styles.projectTechnologies}>
-            <p>
-              <small>Made with</small>
-            </p>
+            <small>Made with</small>
 
             <div className={styles.technologiesList}>
               {project.technologies.map((technology, i) => {
@@ -53,6 +52,18 @@ export default function ProjectPage({ project }: ProjectProps) {
               })}
             </div>
           </div>
+
+          {project.source && (
+            <div className={styles.projectSource}>
+              <p>
+                <small>Checkout the source code!</small>
+              </p>
+
+              <a href={project.source} target="_blank">
+                <BIcon code="github" />
+              </a>
+            </div>
+          )}
         </section>
       </article>
     </Layout>
