@@ -3,6 +3,7 @@ import * as ReactScroll from "react-scroll";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import styles from "./layout.module.css";
+import linkStyles from "../styles/link.module.css";
 
 export type LayoutProps = {
   children: React.ReactNode;
@@ -120,28 +121,38 @@ export default function Layout({ children, home }: LayoutProps) {
           <ul>
             <li>
               {home ? (
-                <ReactScroll.Link to="about" smooth={true} duration={300}>
+                <ReactScroll.Link
+                  to="about"
+                  smooth={true}
+                  duration={300}
+                  className={linkStyles.linkKikoo}
+                >
                   About
                 </ReactScroll.Link>
               ) : (
                 <Link href="/#about">
-                  <a>About</a>
+                  <a className={linkStyles.linkKikoo}>About</a>
                 </Link>
               )}
             </li>
             <li>
               <Link href="/projects">
-                <a>Projects</a>
+                <a className={linkStyles.linkKikoo}>Projects</a>
               </Link>
             </li>
             <li>
               {home ? (
-                <ReactScroll.Link to="contact" smooth={true} duration={300}>
+                <ReactScroll.Link
+                  to="contact"
+                  smooth={true}
+                  duration={300}
+                  className={linkStyles.linkKikoo}
+                >
                   Contacts
                 </ReactScroll.Link>
               ) : (
                 <Link href="/#contact">
-                  <a>Contacts</a>
+                  <a className={linkStyles.linkKikoo}>Contacts</a>
                 </Link>
               )}
             </li>

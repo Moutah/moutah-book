@@ -1,0 +1,45 @@
+.linkKikoo {
+    padding: 1rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.linkKikoo::before,
+.linkKikoo::after {
+    opacity: 0;
+    transition: all 0.11s ease-in-out;
+}
+
+.linkKikoo::before {
+    content: "<";
+    padding-left: 1.4rem;
+    margin-right: -1rem;
+}
+
+.linkKikoo:hover::before {
+    opacity: 0.33;
+    padding-left: 0;
+    margin-right: 0.4rem;
+}
+
+.linkKikoo::after {
+    content: "/>";
+    margin-left: -1rem;
+    padding-right: 1.4rem;
+}
+
+
+.linkKikoo:hover::after {
+    opacity: 0.33;
+    margin-left: 0.4rem;
+    padding-right: 0;
+}
+
+@media screen and (max-width: 756px) {
+
+    .linkKikoo::before,
+    .linkKikoo::after {
+        content: "";
+        display: none;
+    }
+}

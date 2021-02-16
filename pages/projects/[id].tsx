@@ -5,6 +5,7 @@ import Head from "next/head";
 import Technology from "../../components/technology";
 import Layout from "../../components/layout";
 import styles from "../../styles/Project.module.css";
+import linkStyles from "../../styles/link.module.css";
 import Carousel from "../../components/carousel";
 import BIcon from "../../components/b-icon";
 
@@ -36,7 +37,11 @@ export default function ProjectPage({ project }: ProjectProps) {
           <p className={styles.projectLinks}>
             {project.links.map((link, i) => {
               return (
-                <a href={`https://${link}`} key={i}>
+                <a
+                  href={`https://${link}`}
+                  key={i}
+                  className={linkStyles.linkKikoo}
+                >
                   {link}
                 </a>
               );
