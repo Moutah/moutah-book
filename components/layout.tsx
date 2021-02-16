@@ -11,6 +11,7 @@ export type LayoutProps = {
 };
 
 export default function Layout({ children, home }: LayoutProps) {
+  const [isVeiled, setIsVeiled] = useState(true);
   const [isPageTop, setIsPageTop] = useState(true);
 
   const handleScroll = () => setIsPageTop(window.scrollY === 0);
@@ -18,6 +19,8 @@ export default function Layout({ children, home }: LayoutProps) {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   });
+
+  setTimeout(() => setIsVeiled(false), 800);
 
   return (
     <>
@@ -105,6 +108,8 @@ export default function Layout({ children, home }: LayoutProps) {
           content="Polyvalent web developer based in Geneva, Switzerland"
         />
       </Head>
+
+      {isVeiled && <div className={styles.loadingVeil}></div>}
 
       <div
         className={
