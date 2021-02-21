@@ -1,0 +1,18 @@
+{
+  "id": "ng-connect-four",
+  "title": "Connect 4",
+  "date": "2021",
+  "client": "Mathieu Tappolet",
+  "coverImgUrl": "/projects/ng-connect-four/cover.jpg",
+  "gallery": [
+    {
+      "type": "image",
+      "url": "/projects/ng-connect-four/responsive.png"
+    }
+  ],
+  "abstract": "Connect 4 game in the browser.",
+  "description": "Online game of connect 4 made with Angular as a personnal project to explore technologies for responsiveness, internationalization, theming and more.",
+  "technologies": ["Angular", "rxjs"],
+  "links": ["moutah.github.io/ng-connect-four"],
+  "source": "https://github.com/Moutah/ng-connect-four"
+}
