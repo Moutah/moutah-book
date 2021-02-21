@@ -41,6 +41,7 @@ export default function ProjectPage({ project }: ProjectProps) {
                   href={`https://${link}`}
                   key={i}
                   className={linkStyles.linkKikoo}
+                  target="_blank"
                 >
                   {link}
                 </a>
